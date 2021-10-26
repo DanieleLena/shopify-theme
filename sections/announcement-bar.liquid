@@ -3,6 +3,7 @@
     <style>
       .announcement-bar {
         background-color: {{ section.settings.color_bg }};
+        min-height: 40px;
       }
 
       .announcement-bar--link:hover {
@@ -24,14 +25,15 @@
    color: {{ section.settings.color_text }};
 }
 .sliding1 {
-  position: inline-block;
+  position: absolute;
+    top: .5rem;
   animation: slide-text1-right 80s linear infinite;
 }
 .sliding2 {
   position:absolute;
   top: .5rem;
   transform: translateX(-100%);
-  animation: slide-text2-right 90s linear infinite;
+  animation: slide-text2-right 80s linear infinite;
 }
 @keyframes slide-text1-right {
   to {
