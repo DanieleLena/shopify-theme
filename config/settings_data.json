@@ -216,9 +216,9 @@
     "content_for_index": [
       "rich-text",
       "featured-collection",
-      "newsletter-signup",
       "163525724118586922",
-      "163525756777f318f5"
+      "163525756777f318f5",
+      "newsletter-signup"
     ]
   },
   "presets": {
