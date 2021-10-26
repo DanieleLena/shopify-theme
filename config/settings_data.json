@@ -51,10 +51,11 @@
         "settings": {
           "show_announcement": true,
           "home_page_only": true,
+          "sliding_text": true,
           "text": "Get discount 20% with promo code NEW123",
           "link": "shopify:\/\/blogs\/news",
           "color_bg": "#dbc18b",
-          "color_text": "#fff"
+          "color_text": "#ffffff"
         }
       },
       "header": {
