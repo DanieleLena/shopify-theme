@@ -105,7 +105,7 @@
         ],
         "settings": {
           "hero_home_height": "full",
-          "hero_home_auto": false,
+          "hero_home_auto": true,
           "hero_home_auto_speed": 5,
           "hero_icons_color": "#ffffff",
           "hero_overlay_color": "#000000",
