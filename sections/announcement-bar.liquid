@@ -16,6 +16,33 @@
           background-color: {{ section.settings.color_bg | color_darken: darkenAmount }};
         {% endif %}
       }
+  .text-sliding-first-line {
+  white-space: nowrap;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: .5rem 0;
+   color: {{ section.settings.color_text }};
+}
+.sliding1 {
+  position: inline-block;
+  animation: slide-text1-right 80s linear infinite;
+}
+.sliding2 {
+  position:absolute;
+  top: .5rem;
+  transform: translateX(-100%);
+  animation: slide-text2-right 90s linear infinite;
+}
+@keyframes slide-text1-right {
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes slide-text2-right {
+  to {
+    transform: translateX(0%);
+  }
+}
 
       .announcement-bar__message {
         color: {{ section.settings.color_text }};
@@ -28,10 +55,17 @@
       <a href="{{ section.settings.link }}" class="announcement-bar announcement-bar--link">
     {% endif %}
 
-      <p class="announcement-bar__message">{{ section.settings.text | escape }}</p>
         {% if section.settings.sliding_text %}
-          <h2>sliding!!!</h2>
+      <div class="text-sliding-first-line"> 
+                <div class="sliding1"> • {{ section.settings.text | escape }} • {{ section.settings.text | escape }} • {{ section.settings.text | escape }}• {{ section.settings.text | escape }} • {{ section.settings.text | escape }}  </div>
+            <div class="sliding2"> • {{ section.settings.text | escape }} • {{ section.settings.text | escape }} • {{ section.settings.text | escape }} • {{ section.settings.text | escape }} • {{ section.settings.text | escape }}</div>
+                </div>
+                {% else %}
+                      <p class="announcement-bar__message">{{ section.settings.text | escape }}</p>
+
+
         {% endif %}
+
     {% if section.settings.link == blank %}
       </div>
     {% else %}
