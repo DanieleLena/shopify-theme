@@ -189,12 +189,36 @@
           "heading": "You may also like",
           "vendor_enable": true
         }
+      },
+      "163525724118586922": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/black-and-white-running-shoe.jpg",
+          "layout": "left",
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": "Shop",
+          "button_link": "shopify:\/\/collections\/adidas"
+        }
+      },
+      "163525756777f318f5": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/studded-flats.jpg",
+          "layout": "right",
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": "Shop",
+          "button_link": "shopify:\/\/collections\/women"
+        }
       }
     },
     "content_for_index": [
       "rich-text",
       "featured-collection",
-      "newsletter-signup"
+      "newsletter-signup",
+      "163525724118586922",
+      "163525756777f318f5"
     ]
   },
   "presets": {
