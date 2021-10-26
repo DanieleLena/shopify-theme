@@ -205,7 +205,7 @@ $z-index-hero-logo: 5;
 
 /*================ Misc ================*/
 $radius: 2px;
-$svg-action-bar: '//cdn.shopify.com/s/files/1/0605/5972/0663/t/3/assets/action-bar.svg.liquid?165';
+$svg-action-bar: '//cdn.shopify.com/s/files/1/0605/5972/0663/t/3/assets/action-bar.svg.liquid?196';
 
 /*================ #Site Header ================*/
 $height-site-header: 65px;
@@ -1054,10 +1054,12 @@ ol {
   // Set primary button colors - can override later
   background-color: $color-btn-primary;
   color: $color-btn-primary-text;
+  transition: background-color .4s ease-out;
 
   &:hover {
-    background-color: $color-btn-primary-hover;
-    color: $color-btn-primary-text;
+    background-color: white;
+    color:black;
+    border: 1px solid black;
   }
 
   &:active,
