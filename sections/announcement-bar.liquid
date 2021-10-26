@@ -29,7 +29,9 @@
     {% endif %}
 
       <p class="announcement-bar__message">{{ section.settings.text | escape }}</p>
-
+        {% if section.settings.sliding_text %}
+          <h2>sliding!!!</h2>
+        {% endif %}
     {% if section.settings.link == blank %}
       </div>
     {% else %}
@@ -122,6 +124,12 @@
         "zh-TW": "僅限首頁"
       },
       "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "sliding_text",
+      "label": "sliding text",
+      "default": false
     },
     {
       "type": "text",
