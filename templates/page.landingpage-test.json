@@ -1,4 +1,5 @@
 {
+  "layout": "theme.prova",
   "sections": {
     "main": {
       "type": "landingpage-test",
