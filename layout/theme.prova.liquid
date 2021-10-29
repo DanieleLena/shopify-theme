@@ -105,24 +105,16 @@
   </div>
 
   <div id="PageContainer">
-    {% section 'announcement-bar' %}
 
     <div class="site-header-wrapper">
       <div class="site-header-container">
         {% section 'header' %}
 
         <div class="action-area">
-          {%- unless request.page_type == 'product' or request.page_type == 'search' or request.page_type == 'index' -%}
-            {% include 'action-bar' %}
-          {%- endunless -%}
+          
 
-          {%- if request.page_type == 'search' and search.performed -%}
-            <div class="action-bar">
-              <div class="search__results-count">
-                {{ 'general.search.results_with_count' | t: count: search.results_count, term: search.terms }}
-              </div>
-            </div>
-          {%- endif -%}
+      
+          
         </div>
       </div>
     </div>
