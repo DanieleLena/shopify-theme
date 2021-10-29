@@ -205,7 +205,7 @@ $z-index-hero-logo: 5;
 
 /*================ Misc ================*/
 $radius: 2px;
-$svg-action-bar: '//cdn.shopify.com/s/files/1/0605/5972/0663/t/3/assets/action-bar.svg.liquid?255';
+$svg-action-bar: '//cdn.shopify.com/s/files/1/0605/5972/0663/t/3/assets/action-bar.svg.liquid?563';
 
 /*================ #Site Header ================*/
 $height-site-header: 65px;
@@ -2910,6 +2910,9 @@ textarea {
 }
 
 /*================ Hero header ================*/
+.site-header {
+backgorund-color: red;
+}
 .hero__header {
   position: absolute;
   bottom: 0;
