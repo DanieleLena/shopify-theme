@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "landingpage-test",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
